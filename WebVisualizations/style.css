@@ -1,0 +1,66 @@
+
+#navbar{
+  transition: top 0.3s;
+}
+
+a.title{
+  display: inline-block;
+  font-family: 'Cabin', sans-serif;
+  float:left;
+  color: white;
+  letter-spacing: .7px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+a.link {
+  display: inline-block;
+  font-family: 'Cabin', sans-serif;
+  float: right;
+  color:white;
+  letter-spacing: .7px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+#navbar a:hover{
+  color:goldenrod;
+}
+body{
+  background: lightgray;
+}
+#main-landing{
+  background-color: white;
+  padding: 50px;
+}
+
+#landing-image {
+  float:left;
+  width: 200px;
+  margin: 10px;
+}
+
+#figure {
+  position: relative;
+}
+#sidebar-img{
+  position: relative;
+}
+#sidebar {
+  background-color: white;
+  padding: 50px;
+}
+
+#image #sidebar-1{
+  float: left;
+  width: 50%;
+  height: 50%;
+  margin: 10px;
+}
+
+#image #sidebar-2{
+  float: right;
+  width: 50%;
+  height: 50%;
+  margin: 10px;
+}
