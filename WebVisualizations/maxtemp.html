@@ -17,23 +17,26 @@
 
     <div class="container">
       <nav class="navbar">
-        <ul>
-          <li><a class="title" href="index.html">Latitude</a></li>
-          <li><a href="data.html">Data</a></li>
-          <li><a href="comparisons.html">Comparisons</a></li>
-          <div class="dropdown">
-            <button class="dropbtn">Plots
-              <i class="fa fa-caret-down"></i>
-            </button>
+          <a class="title" href="home.html">Latitude</a>
+          <div class="menu-right">
+            <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="comparisons.html">Comparisons</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">Plots &#8595;
+                <i class="fa fa-caret-down"></i>
+              </button>
             <div class="dropdown-content">
               <a href="maxtemp.html">Max Temperature</a>
               <a href="humidity.html">Humidity</a>
               <a href="cloudiness.html">Cloudiness</a>
               <a href="wind.html">Wind Speed</a>
             </div>
-        </ul>
+          </ul>
+          </div>
       </nav>
-    </div>
+  </div>
 
     <div class='container'>
       <div class='row'>
@@ -41,16 +44,17 @@
           <section id="main-landing">
             <h1>Max Temperature</h1>
             <section id="figure">
-              <img id="landing-image" src="Resources/assets/images/Fig1.png" alt="landing page image">
+              <img id="plots-image" src="Resources/assets/images/Fig1.png" alt="landing page image">
             </section>
           <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of year this data was gathered.</p>
+          <p>This plot, City Latitude vs. Max Temperature, shows the maximum temperature of randomly generated cities in relation to their latitude or their distance away from the equator(0). This plot shows that there is a strong correlation between temperature and latitude for both northern and southern hemispheres. There is a higher average max temperature in the southern latitude with the highest max temperatures near the equator and the lowest max temperatures in the northern hemisphere.</p>
           </section>
         </div>
 
         <div class='col-md-5'>
             <h1>Visualizations</h1>
             <div class='columns'>
-              <a href='maxtemp.html'><img id="image" src="Resources/assets/images/Fig1.png" alt="sidebar image 1"></a>
+              <a href='maxtemp.html'><img class="active" id="image" src="Resources/assets/images/Fig1.png" alt="sidebar image 1"></a>
               <a href='humidity.html'><img id="image" src="Resources/assets/images/Fig2.png" alt="sidebar image 2"></a>
             </div>
             <div class='columns'>

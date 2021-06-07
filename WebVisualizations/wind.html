@@ -17,23 +17,26 @@
 
     <div class="container">
       <nav class="navbar">
-        <ul>
-          <li><a class="title" href="index.html">Latitude</a></li>
-          <li><a href="data.html">Data</a></li>
-          <li><a href="comparisons.html">Comparisons</a></li>
-          <div class="dropdown">
-            <button class="dropbtn">Plots
-              <i class="fa fa-caret-down"></i>
-            </button>
+          <a class="title" href="home.html">Latitude</a>
+          <div class="menu-right">
+            <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="comparisons.html">Comparisons</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">Plots &#8595;
+                <i class="fa fa-caret-down"></i>
+              </button>
             <div class="dropdown-content">
               <a href="maxtemp.html">Max Temperature</a>
               <a href="humidity.html">Humidity</a>
               <a href="cloudiness.html">Cloudiness</a>
               <a href="wind.html">Wind Speed</a>
             </div>
-        </ul>
+          </ul>
+          </div>
       </nav>
-    </div>
+  </div>
 
     <div class='container'>
       <div class='row'>
@@ -41,9 +44,9 @@
           <section id="main-landing">
             <h1>Wind Speed</h1>
             <section id="figure">
-              <img id="landing-image" src="Resources/assets/images/Fig4.png" alt="landing page image">
+              <img id="plots-image" src="Resources/assets/images/Fig4.png" alt="landing page image">
             </section>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda, exercitationem officia ducimus quisquam totam.</p>
+              <p>This plot, City Latitude vs. Wind Speed, shows wind speed(mph) of randomly generated cities in relation to their latitude. This plot shows that there does not seem to be a correlation between wind speed and latitude. It is interesting to note that the highest reported wind speed lies in the northern hemisphere.</p>
           </section>
         </div>
 
@@ -55,7 +58,7 @@
             </div>
             <div class='columns'>
               <a href='cloudiness.html'><img id="image" src="Resources/assets/images/Fig3.png" alt="sidebar image 3"></a>
-              <a href='wind.html'><img id="image" src="Resources/assets/images/Fig4.png" alt="sidebar image 4"></a>
+              <a href='wind.html'><img class="active" id="image" src="Resources/assets/images/Fig4.png" alt="sidebar image 4"></a>
             </div>
           </section>
         </div>

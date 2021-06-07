@@ -8,18 +8,51 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
   </head>
 
   <body>
 
-    <div id="navbar">
-      <a class="title" href="index.html">web-design-challenge</a>
-      <a class="link link-1 active" href="data.html">Data</a>
-      <a class="link link-2" href="comparisons.html">Comparisons</a>
-      <a class="link link-3" href="plots.html">Plots</a>
+    <div class="container">
+      <nav class="navbar">
+          <a class="title" href="home.html">Latitude</a>
+          <div class="menu-right">
+            <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="comparisons.html">Comparisons</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">Plots &#8595;
+                <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+              <a href="maxtemp.html">Max Temperature</a>
+              <a href="humidity.html">Humidity</a>
+              <a href="cloudiness.html">Cloudiness</a>
+              <a href="wind.html">Wind Speed</a>
+            </div>
+          </ul>
+          </div>
+      </nav>
+  </div>
+
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+            <h1 id="comp-h1">Comparisons</h1>
+            <div class='columns'>
+              <a href='maxtemp.html'><img id="image-comp" src="Resources/assets/images/Fig1.png" alt="sidebar image 1"></a>
+              <a href='humidity.html'><img id="image-comp" src="Resources/assets/images/Fig2.png" alt="sidebar image 2"></a>
+            </div>
+            <div class='columns'>
+              <a href='cloudiness.html'><img id="image-comp" src="Resources/assets/images/Fig3.png" alt="sidebar image 3"></a>
+              <a href='wind.html'><img id="image-comp" src="Resources/assets/images/Fig4.png" alt="sidebar image 4"></a>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
 
   </body>
