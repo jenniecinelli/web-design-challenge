@@ -1,66 +1,72 @@
 
-#navbar{
+.navbar{
   transition: top 0.3s;
+  background-color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navbar li{
+  display: inline-block;
+  padding: 5px;
+  letter-spacing: .7px;
+  margin-right: 10px;
+  cursor: cell;
+}
+
+a {
+  color:black;
+  text-decoration: none;
+  cursor: cell;
 }
 
 a.title{
   display: inline-block;
-  font-family: 'Cabin', sans-serif;
-  float:left;
-  color: white;
   letter-spacing: .7px;
-  padding: 20px;
-  text-decoration: none;
+  cursor: cell;
 }
 
-a.link {
-  display: inline-block;
-  font-family: 'Cabin', sans-serif;
-  float: right;
-  color:white;
-  letter-spacing: .7px;
-  padding: 20px;
-  text-decoration: none;
-}
 
-#navbar a:hover{
-  color:goldenrod;
-}
 body{
-  background: lightgray;
+  background: #fff
 }
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
 #main-landing{
-  background-color: white;
   padding: 50px;
 }
 
 #landing-image {
   float:left;
-  width: 200px;
+  width: 450px;
   margin: 10px;
 }
 
 #figure {
   position: relative;
 }
-#sidebar-img{
-  position: relative;
-}
-#sidebar {
-  background-color: white;
+
+.col-md-5{
   padding: 50px;
 }
 
-#image #sidebar-1{
-  float: left;
-  width: 50%;
-  height: 50%;
-  margin: 10px;
+.columns{
+  flex: 50%;
+  padding: 0 4px;
 }
 
-#image #sidebar-2{
-  float: right;
-  width: 50%;
-  height: 50%;
-  margin: 10px;
+#image {
+  margin-top: 8px;
+  vertical-align: middle;
+  float: left;
+  width: 200px;
 }
