@@ -4,12 +4,16 @@
   <head>
 
     <meta charset="UTF-8">
-    <title>web-design-challenge</title>
+    <title>Latitude</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- style sheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 
   </head>
 
@@ -46,25 +50,38 @@
             <section id="figure">
               <img id="plots-image" src="Resources/assets/images/Fig1.png" alt="landing page image">
             </section>
+            <hr>
           <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of year this data was gathered.</p>
           <p>This plot, City Latitude vs. Max Temperature, shows the maximum temperature of randomly generated cities in relation to their latitude or their distance away from the equator(0). This plot shows that there is a strong correlation between temperature and latitude for both northern and southern hemispheres. There is a higher average max temperature in the southern latitude with the highest max temperatures near the equator and the lowest max temperatures in the northern hemisphere.</p>
           </section>
         </div>
 
+
         <div class='col-md-5'>
-            <h1>Visualizations</h1>
-            <div class='columns'>
-              <a href='maxtemp.html'><img class="active" id="image" src="Resources/assets/images/Fig1.png" alt="sidebar image 1"></a>
-              <a href='humidity.html'><img id="image" src="Resources/assets/images/Fig2.png" alt="sidebar image 2"></a>
+          <h1>Visualizations</h1>
+          <div class ='container'>
+            <div class='row'>
+              <div class='col-6'>
+                <a class='active' href='maxtemp.html'><img id="image" src="Resources/assets/images/Fig1.png" alt="sidebar image 1"></a>
+              </div>
+              <div class='col-6'>
+                <a href='humidity.html'><img id="image" src="Resources/assets/images/Fig2.png" alt="sidebar image 2"></a>
+              </div>
             </div>
-            <div class='columns'>
-              <a href='cloudiness.html'><img id="image" src="Resources/assets/images/Fig3.png" alt="sidebar image 3"></a>
-              <a href='wind.html'><img id="image" src="Resources/assets/images/Fig4.png" alt="sidebar image 4"></a>
+  
+  
+            <div class='row'>
+              <div class='col-6'>
+                <a href='cloudiness.html'><img id="image" src="Resources/assets/images/Fig3.png" alt="sidebar image 3"></a>
+              </div>
+              <div class='col-6'>
+                <a href='wind.html'><img id="image" src="Resources/assets/images/Fig4.png" alt="sidebar image 4"></a>
+              </div>
             </div>
-          </section>
+  
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
   </body>
 </html>

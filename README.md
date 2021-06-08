@@ -1,4 +1,4 @@
-Project Website Address: https://jenniecinelli.github.io/web-design-challenge/index.html
+Project Website Address: https://jenniecinelli.github.io/web-design-challenge/
 
 # Web Design Homework - Web Visualization Dashboard (Latitude)
 

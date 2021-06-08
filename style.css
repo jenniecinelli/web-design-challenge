@@ -85,7 +85,6 @@ p {
 }
 
 h1 {
-  padding: 10px;
   margin-bottom: 20px;
   font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -97,7 +96,8 @@ h1 {
 
 #landing-image {
   float:left;
-  width: 450px;
+  width: auto;
+  display: block;
   margin: 10px;
 }
 
@@ -110,19 +110,20 @@ h1 {
   padding: 50px;
 }
 
-.columns{
+.col-6{
   flex: 50%;
   padding: 0 4px;
 }
 
 #image {
-  margin-top: 8px;
   vertical-align: middle;
   width: 200px;
+  margin-top: 8px;
+  padding: 0;
 }
 
 /* img highlight when active */
-a .active {
+a.active img {
   border: solid 1px #cc9900;
 }
 
@@ -162,18 +163,28 @@ a .active {
 }
 
 /* comparisons page */
+.image-comp{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
 
-#image-comp{
-  margin-top: 8px;
-  vertical-align: middle;
-  float: left;
-  width: 50%;
+h4{
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /* plots */
 
 #plots-image{
   position: relative;
-  width: 600px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.table {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
