@@ -20,6 +20,7 @@ a {
 }
 
 a.title{
+  font-size: 20px;
   display: inline-block;
   letter-spacing: .7px;
   cursor: cell;
@@ -74,6 +75,81 @@ a.title{
   display:block;
 }
 
+
+/* menu dropdown */
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu .btn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 5px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: cell;
+}
+
+.menu:hover .btn {
+  color: #cc9900;
+}
+
+.menu-content {
+  text-align: left;
+  display: block;
+  position:relative;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.menu-content a:hover {
+  color: #cc9900;
+}
+
+.menu:hover .menu-content {
+  display:block;
+}
+
+.menu li{
+  display: block;
+  padding: 5px;
+  letter-spacing: .7px;
+  margin-right: 10px;
+  cursor: cell;
+}
+
+.menu .dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.menu {
+  display: block;
+}
+
+.navbar-2 {
+  display: none;
+  background-color: #cc9900;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.navbar-2 .title{
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navbar-2 .title:hover {
+  color: #cc9900;
+}
+
+
 /* universal body styles */
 body{
   background: #fff
@@ -103,6 +179,7 @@ h1 {
 
 #figure {
   position: relative;
+  width: 100%;
 }
 
 /* sidebar */
@@ -118,6 +195,7 @@ h1 {
 #image {
   vertical-align: middle;
   width: 200px;
+  position: relative;
   margin-top: 8px;
   padding: 0;
 }
@@ -163,11 +241,22 @@ a.active img {
 }
 
 /* comparisons page */
-.image-comp{
+#image-comp{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: auto;
+}
+
+#image-comp{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+#image-comp:hover{
+  border: solid 1px #cc9900;
 }
 
 h4{
@@ -187,3 +276,69 @@ h4{
 .table {
   font-family: 'Open Sans Condensed', sans-serif;
 }
+
+
+/* navbar media query */
+@media screen and (max-width: 800px) {
+  .navbar-2 {
+        display: block;
+        text-align: center;
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+  .menu {
+        display: block;
+        float: left;
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+
+  .navbar {
+        display:none;
+      }
+
+      .menu {
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+      }
+      
+      .menu {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: black;
+        padding: 5px 10px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        cursor: cell;
+      }
+      
+      .menu:hover .btn {
+        color: #cc9900;
+      }
+      
+      .menu-content {
+        display: none;
+        position: relative;
+        background-color: #fff;
+        min-width: 160px;
+        z-index: 1;
+      }
+      
+      .menu-content a {
+        float:none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .menu-content a:hover {
+        color: #cc9900;
+      }
+      
+      .menu:hover .menu-content {
+        display:block;
+      }
+    }
